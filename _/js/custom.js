@@ -24,3 +24,9 @@ $(function() {
 			event.preventDefault();
     });
 	});
+
+$(function () {
+		  $(".navbar-toggle").on("click", function () {
+			    $(this).toggleClass("active");					
+		  });
+	});

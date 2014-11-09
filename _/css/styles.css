@@ -6,33 +6,23 @@ html {
   width: 100%;
   height: 100%;
 }
-/*
-.navbar-toggle {
-		.icon-bar:nth-of-type(2) {
-	 		top: 1px;
-		}
-		.icon-bar:nth-of-type(3) {
-  		top: 2px;
-		}
-		.icon-bar {
-	  	position: relative;
-	  	transition: all 500ms ease-in-out;
-		}
+#glyph-closed,
+#glyph-open {
+  color: #fff;
+  font-size: 20px;
 }
-.navbar-toggle.active {
-		.icon-bar:nth-of-type(1) {
-	  	top: 6px;
-	  	transform: rotate(45deg);
-		}
-		.icon-bar:nth-of-type(2) {
-	  	background-color: transparent;
-		}
-		.icon-bar:nth-of-type(3) {
-	  	top: -6px;
-	  	transform: rotate(-45deg);
-		}
+.navbar-toggle #glyph-closed {
+  display: block;
 }
-*/
+.navbar-toggle #glyph-open {
+  display: none;
+}
+.navbar-toggle.active #glyph-closed {
+  display: none;
+}
+.navbar-toggle.active #glyph-open {
+  display: block;
+}
 #footer p {
   color: rgba(52, 172, 220, 0.98);
   font-weight: 700;
