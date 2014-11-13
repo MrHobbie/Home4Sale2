@@ -6,6 +6,7 @@ html {
   width: 100%;
   height: 100%;
 }
+/* replace the collapsed hamburger */
 #glyph-closed,
 #glyph-open {
   color: #fff;
@@ -23,9 +24,9 @@ html {
 .navbar-toggle.active #glyph-open {
   display: block;
 }
+/* end of hamburger replacement */
 #footer p {
-  color: rgba(52, 172, 220, 0.98);
-  font-weight: 700;
+  font-weight: 300;
   font-size: small;
   text-align: center;
   float: none;
@@ -66,37 +67,76 @@ html {
 #photogallery .row {
   padding: 10px 0 10px 0;
 }
-#photogallery h3 {
+#photogallery h2 {
   margin: -20px 0 0 0;
-  color: rgba(52, 172, 220, 0.98);
 }
 #photogallery p {
   font-size: 90%;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
-  color: rgba(52, 172, 220, 0.98);
+  color: #008cba;
 }
 #outsideFront,
 #outsideBack {
   height: 100%;
   padding-top: 100px;
 }
-#outsideFront h3,
-#outsideBack h3 {
+#outsideFront h2,
+#outsideBack h2 {
   margin: -20px 0 10px 0;
-  color: rgba(52, 172, 220, 0.98);
   text-shadow: none;
 }
 #location {
   height: 100%;
-  padding-top: 100px;
+  padding-top: 40px;
 }
-#location h3 {
+#location h2 {
   margin: -20px 0 5px 0;
-  color: rgba(52, 172, 220, 0.98);
 }
 #location img {
   border: 2px solid #bbb;
+}
+#specOverview {
+  height: 100%;
+  padding-top: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#specOverview h2 {
+  margin: 10px 0 5px 0;
+}
+#specOverview p {
+  font-size: .8em;
+}
+#specDetails {
+  height: 100%;
+}
+#specDetails h2 {
+  margin: 70px 0 5px 20px;
+}
+#specDetails #datadetails {
+  margin: 0 20px 0 20px;
+}
+#specDetails .col1,
+#specDetails .col3,
+#specDetails .col5 {
+  width: 11%;
+}
+#specDetails .col2,
+#specDetails .col4,
+#specDetails .col6 {
+  width: 22%;
+}
+#specDetails td {
+  text-align: right;
+  font-size: .9em;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #bbb;
+}
+#specDetails td.bd {
+  font-weight: 600;
+  text-align: center;
 }
 #contact {
   height: 100%;
@@ -106,23 +146,13 @@ html {
   margin-left: auto;
   width: 80%;
 }
-#contact .form-control,
-#contact .input-group-addon {
-  border: 1px solid #ccc;
-}
 #contact label {
-  color: rgba(52, 172, 220, 0.98);
   font-weight: 700;
 }
 #contact .jumbotron {
-  color: rgba(52, 172, 220, 0.98);
+  padding-top: 30px;
+  padding-bottom: 30px;
   margin-bottom: 0;
-}
-#contact button {
-  background-color: rgba(52, 172, 220, 0.98);
-}
-#contact ::-webkit-input-placeholder {
-  color: #bbb;
 }
 @media screen and (max-width: 768px) {
   .jumbotron {
@@ -138,5 +168,42 @@ html {
   }
   .carousel-caption > h3 {
     font-size: 16px;
+  }
+  .navbar-nav > li > a {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 14px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 10px;
+  }
+  #photogallery {
+    margin-bottom: 50px;
+  }
+  #specOverview {
+    height: auto;
+  }
+  #specDetails {
+    height: auto;
+  }
+  #specDetails .col1,
+  #specDetails .col2 {
+    width: 50%;
+    float: left;
+  }
+  #specDetails .col3,
+  #specDetails .col4 {
+    width: 50%;
+    float: left;
+  }
+  #specDetails .col5,
+  #specDetails .col6 {
+    width: 50%;
+    float: left;
+  }
+  #contact {
+    height: 200%;
   }
 }
